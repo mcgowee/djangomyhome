@@ -1,4 +1,11 @@
 <h1>Earl's Portfolio</h1>
+<p>Here are some of my projects.</p>
+
+{% load static %}
+
+<a href="{% static 'portfolio/resume.pdf' %}">Resume</a>
+
+<img src="{% static 'portfolio/underconstruction.jpeg' %}" width="500">
 
 {% for project in projects %}
     <div class="project">
